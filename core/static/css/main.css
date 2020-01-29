@@ -1,0 +1,17 @@
+:root{
+  --navy-blue:  #34495e;
+  --dark-navy-blue: #2c3e50;
+}
+body{
+  background-color: var(--navy-blue);
+}
+nav, .content{
+  height: 100vh;
+}
+nav{
+  background-color: var(--dark-navy-blue);
+  color: #fff;
+}
+.content{
+  /*background-color: #fff;*/
+}
