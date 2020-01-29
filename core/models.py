@@ -16,8 +16,8 @@ class Project(models.Model):
 		null = False
 	)
 	end = models.DateTimeField(
-		blank = False,
-		null = False
+		blank = True,
+		null = True
 	)
 class WorkItem(models.Model):
 	project = models.ForeignKey(
@@ -33,18 +33,14 @@ class WorkItem(models.Model):
 		null = False
 	)
 	description = models.TextField(
-		blank = False,
-		null = False
+		blank = True,
+		null = True
 	)
 	progress = models.PositiveSmallIntegerField(
 		models.MaxValueValidator(100),
 		default = 0,
 	)
 	start = models.DateTimeField(
-		blank = False,
-		null = False
-	)
-	end = models.DateTimeField(
 		blank = False,
 		null = False
 	)
